@@ -6,7 +6,8 @@ function AccordionItem({ title, content, isOpen, toggleAccordion }) {
   return (
     <div className="accordion-item">
       <div className="accordion-header" onClick={toggleAccordion}>
-        {title}
+        <span>{title}</span>
+        <span>{isOpen ? '-' : '+'}</span>
       </div>
       {isOpen && <div className="accordion-content">{content}</div>}
     </div>
