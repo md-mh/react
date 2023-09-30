@@ -15,7 +15,10 @@ const InputFile = () => {
         <>
             <input type='file' onChange={(e) => handleFile(e)} />
             <p>{data?.webkitRelativePath}</p>
-            <a href={data?.webkitRelativePath} >Download</a>
+            {
+                data &&
+                <a href={URL.createObjectURL(data)} >Download</a>
+            }
         </>
     );
 };
