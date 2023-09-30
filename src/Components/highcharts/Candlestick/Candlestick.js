@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Highcharts from 'highcharts/highstock';
-import HighchartsReact from 'highcharts-react-official';
+// import HighchartsReact from 'highcharts-react-official';
 
 const Candlestick = () => {
 
@@ -21,25 +21,54 @@ const Candlestick = () => {
     }, [])
     useEffect(() => {
         const options = {
+            rangeSelector: {
+                selected: 1
+            },
+
             title: {
-                text: 'Candlestick Chart Example',
+                text: 'AAPL Stock Price'
             },
-            xAxis: {
-                type: 'datetime',
-            },
-            yAxis: {
-                title: {
-                    text: 'Price',
-                },
-            },
-            series: [
-                {
-                    type: 'candlestick',
-                    name: 'AAPL',
-                    data: data,
-                },
-            ],
+
+            series: [{
+                type: 'candlestick',
+                name: 'AAPL Stock Price',
+                data: data,
+                dataGrouping: {
+                    units: [
+                        [
+                            'week', // unit name
+                            [1] // allowed multiples
+                        ], [
+                            'month',
+                            [1, 2, 3, 4, 6]
+                        ]
+                    ]
+                }
+            }]
         };
+        // const options = {
+        //     rangeSelector: {
+        //         selected: 1
+        //     },
+        //     title: {
+        //         text: 'Candlestick Chart Example',
+        //     },
+        //     xAxis: {
+        //         type: 'datetime',
+        //     },
+        //     yAxis: {
+        //         title: {
+        //             text: 'Price',
+        //         },
+        //     },
+        //     series: [
+        //         {
+        //             type: 'candlestick',
+        //             name: 'AAPL',
+        //             data: data,
+        //         },
+        //     ],
+        // };
 
         // Render the chart using HighchartsReact
         Highcharts.chart('candlestick-chart', options);

@@ -1,7 +1,8 @@
 // Highcharts.getJSON('https://demo-live-data.highcharts.com/aapl-ohlc.json', function (data) {
 
 //     // create the chart
-//     data.stockChart('container', {
+//     data.stockChart('container',
+//     {
 //         rangeSelector: {
 //             selected: 1
 //         },
