@@ -1,5 +1,8 @@
 import React from "react";
-import ImageUploaderWithCropper from "./Components/ImageCrop/ImageUploaderWithCropper";
+// import Table from "./Components/table/Table";
+import QRCodeGenerator from "./Components/QrCode/QRCodeGenerator";
+// import ImageUploaderWithCropper from "./Components/ImageCrop/ImageUploaderWithCropper";
+// import WhatsApp from "./Components/whatsApp/WhatsApp";
 // import DragAndDrop from './Components/DragAndDrop/DragAndDrop';
 // import Accordion from './Components/Accordion/Accordion';
 // import Candlestick from './Components/highcharts/Candlestick/Candlestick';
@@ -16,7 +19,10 @@ const App = () => {
       {/* <InputFile /> */}
       {/* <InputImage /> */}
       {/* <DragAndDrop /> */}
-      <ImageUploaderWithCropper />
+      {/* <ImageUploaderWithCropper /> */}
+      {/* <WhatsApp /> */}
+      {/* <Table /> */}
+      <QRCodeGenerator />
     </>
   );
 };
