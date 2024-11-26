@@ -1,6 +1,7 @@
 import React from "react";
+import QuillTextEditor from "./Components/QuillTextEditor/QuillTextEditor";
 // import Table from "./Components/table/Table";
-import QRCodeGenerator from "./Components/QrCode/QRCodeGenerator";
+// import QRCodeGenerator from "./Components/QrCode/QRCodeGenerator";
 // import ImageUploaderWithCropper from "./Components/ImageCrop/ImageUploaderWithCropper";
 // import WhatsApp from "./Components/whatsApp/WhatsApp";
 // import DragAndDrop from './Components/DragAndDrop/DragAndDrop';
@@ -22,7 +23,8 @@ const App = () => {
       {/* <ImageUploaderWithCropper /> */}
       {/* <WhatsApp /> */}
       {/* <Table /> */}
-      <QRCodeGenerator />
+      {/* <QRCodeGenerator /> */}
+      <QuillTextEditor />
     </>
   );
 };
