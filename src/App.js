@@ -1,11 +1,12 @@
 import React from "react";
+import EasyCalculator from "./Components/MyPackage/EasyCalculator";
 // import QuillTextEditor from "./Components/QuillTextEditor/QuillTextEditor";
 // import MapChart from "./Components/Map/MapChart";
 // import Table from "./Components/table/Table";
 // import QRCodeGenerator from "./Components/QrCode/QRCodeGenerator";
 // import ImageUploaderWithCropper from "./Components/ImageCrop/ImageUploaderWithCropper";
 // import WhatsApp from "./Components/whatsApp/WhatsApp";
-import DragAndDrop from "./Components/DragAndDrop/DragAndDrop";
+// import DragAndDrop from "./Components/DragAndDrop/DragAndDrop";
 // import Accordion from './Components/Accordion/Accordion';
 // import Candlestick from './Components/highcharts/Candlestick/Candlestick';
 // import CandlestickChart from './Components/highcharts/Candlestick/CandlestickChart';
@@ -21,7 +22,7 @@ const App = () => {
       {/* <CandlestickChart /> */}
       {/* <InputFile /> */}
       {/* <InputImage /> */}
-      <DragAndDrop />
+      {/* <DragAndDrop /> */}
       {/* <ImageUploaderWithCropper /> */}
       {/* <WhatsApp /> */}
       {/* <Table /> */}
@@ -29,6 +30,7 @@ const App = () => {
       {/* <QuillTextEditor /> */}
       {/* <MapChart /> */}
       {/* <MapChart2 /> */}
+      <EasyCalculator />
     </>
   );
 };
